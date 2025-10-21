@@ -1,12 +1,15 @@
 #Problem 1
 
-def print_backwards(string):
+def reverse_string(string):
     if len(string) == 1:
         return string
     else:
-        return string[-1] + print_backwards(string[:-1])
+        return string[-1] + reverse_string(string[:-1])
 
-# print(print_backwards("Hello, world!"))
+def print_backwards(string):
+    print(reverse_string(string))
+
+#print_backwards("!dlrow ,olleH")
 
 #Problem 2
 
